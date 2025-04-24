@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer {
+    width: 100%;
+    background-color: #0d0b25;
+   
+  }
+
+.navbar1 {
+        width: 100%;
+        height: 70px;
+        background: linear-gradient(
+            to right,
+            blue 0%,
+            blue 50%,
+            #9e003a 50%,
+            #9e003a 100%
+        );
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    
+}
+
+
+.logo1 {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+  }
+.sponsorat p{
+    color: yellow;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.sponsorat1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+  }
+.partners:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.social{
+    display:flex;
+    justify-content: center;
+}
+.social1{
+    font-size: 40px;
+    color: white;
+    margin-left: 20px;
+}
+.headeri{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+.emrat{
+    color: rgb(123, 123, 123);
+    
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+.containeri{
+    margin-top: 50px;
+}
+.footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 20px;
+  }
+.logo2{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+.footer2 h1{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    margin-left: 10px;
+   
+}
+.footer3{
+      
+    height: 10px;
+     width: 100%;
+    background: linear-gradient(
+    to right,
+    #003295 0%,
+    #003295 50%,
+    #6a1c5f 53%,
+    #9e003a 56%,
+    #9e003a 100%
+  );
+  padding:4px;
+margin-top: 5px;
+  
+}
