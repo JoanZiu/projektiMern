@@ -7,7 +7,7 @@ app.post("/createContact/", async (req, res) => {
         console.log(req.body);
        const newContact=new contactModel(req.body);
        await newContact.save();
-       res.status(200).json(newContact);
+       res.status(200).send(newContact);
     }catch(err){
         //Terminal
         console.log(err);

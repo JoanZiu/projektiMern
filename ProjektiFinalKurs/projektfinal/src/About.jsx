@@ -1,10 +1,13 @@
 import React from "react";
+import BestYears from "./BestYears";
+import DreamTeam from "./DreamTeam";
+import MiniFooter from "./MiniFooter";
 
 const About = () => {   
     return(
     <div>
-        <h1>About Us</h1>
-        <p>Our company was founded in 2020 and has been providing quality services to the public ever since.</p>
+        <BestYears/>
+        
     </div>
     );
 }

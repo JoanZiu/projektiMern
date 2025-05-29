@@ -1,8 +1,8 @@
 .Forma{
-    margin-top: 140px;
+    margin-top: 130px;
     margin-left: 80px;
     margin-bottom: 50px;
-        width: 600px;
+        width: 400px;
     background: linear-gradient(to bottom right, #f0f0f0, #ffffff);
     padding: 30px;
     border-radius: 20px;
@@ -54,39 +54,48 @@
 .Butoni{
     background: linear-gradient(to right, 
      #003295 0%,
-    #003295 15%,
-   
+    #003295 15%,                                          
     #511048 60%,
     #9e0000 90%,
-    #9e0000 100%) !important;
-    color: white;
+    #9e0000 100% ) !important;
+    color: white;                                         
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
 }
-.line{
-    
-        width: 2px;
-        height: 630px;
-        background-color: #838383; 
-        position: absolute;
-        left: 50%;
-        top: 0;
-    
-}
-.containerContact{
+.line {
+    width: 2px;
+    height: 630px;
+    background-color: #6c6c6c;                            
+    position: absolute;
+    left: 6px;
+    top: 0;
+  }
+.rowContact {
     display: flex;
-
-}
-.containerContact1{
-   
+    flex-direction: row;
     width: 100%;
-}
-.containerContact1 .containeri{
-    width: 100%;
-    overflow: hidden;
-    margin-top: 50px;
-}
+    align-items: flex-start;
+    min-height: 650px;
+  }
+.containerContact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+.containerContact1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+.harta {
+    max-width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 140px;
+  }
 .Forma Button{
     background: linear-gradient(
     to right,
@@ -114,7 +123,6 @@ input:focus, input:hover {
   }
   
   .background{
-    display: flex;
     width: 100%;
     margin-top: 50px;
     background-image: url('../images/campnou.jpg');
@@ -124,13 +132,15 @@ input:focus, input:hover {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    
   }
   
 @media screen and (max-width: 768px) {
  
-    .containerContact{
+    .rowContact{
       flex-direction: column; 
     }
+
     .Forma{
         margin-top: 50px;
         width: 100%;
@@ -140,7 +150,7 @@ input:focus, input:hover {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         margin-left: 0;
     }
-    .containeri{
+    .harta{
         margin-top: 50px;
         width: 100%;
         margin-left: 0px;
@@ -148,4 +158,8 @@ input:focus, input:hover {
         
 
     }
+    .line {
+        display: none;
+      }
+      
 }

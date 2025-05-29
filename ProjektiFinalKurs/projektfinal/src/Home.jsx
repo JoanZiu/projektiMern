@@ -1,10 +1,11 @@
 import React from "react";
-import img1 from './images/hena.jpg';
-import Karusel from "./Karusel";
+import KaruseliLojtar from "./KaruseliLojtar";
+import News from "./News";
 const Home = () => {
     return(
     <div className="Sfondi">
-        <Karusel/>
+        <News/>
+        <KaruseliLojtar/>  
     </div>
     );
 }

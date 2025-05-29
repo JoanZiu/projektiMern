@@ -17,7 +17,7 @@ const contactSchema=new mongoose.Schema({
         // required:true,
         
     },terms:{
-        type:boolean,
+        type:Boolean,
         // required:true,
     }
 })

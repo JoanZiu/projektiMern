@@ -12,6 +12,7 @@ import { Col } from "react-bootstrap";
 
 const Contact = () => {
    const [showMessage, setShowMessage] = useState(false);
+  const [show, setShow] = useState(false);
   const [newContact, setNewContact] = useState({
     firstName: "",
     lastName: "",
@@ -28,6 +29,12 @@ const Contact = () => {
     .catch(error => console.error("Error:", error));
     
   };
+  const terms=()=>{
+    setNewContact({
+      ...newContact,
+      terms: !newContact.terms
+    });
+  }
   const handleChange=(e)=>{
     setNewContact({
       ...newContact,//... = spread operator
@@ -41,8 +48,8 @@ const Contact = () => {
 
   return (
     <Container className="background" fluid>
-    <Row>
-    <Col className="containerContact" xs={12}  lg={4}>
+    <Row className="rowContact">
+    <Col className="containerContact" xs={12} md={6} lg={6}>
       <Form onSubmit={dergo} className="Forma">
         <Form.Group className="mb-3" controlId="firstName">
           <Form.Label className="label">First Name</Form.Label>
@@ -61,19 +68,19 @@ const Contact = () => {
           <Form.Control type="password" placeholder="Password" name="password" />
         </Form.Group>
          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Terms and Conditions" name="terms" value={newContact.terms} onChange={handleChange}/>
+          <Form.Check type="checkbox" label="Terms and Conditions" name="terms" value={newContact.terms} onChange={terms}/>
         </Form.Group> 
         <Button variant="primary" type="submit">
           Submit
         </Button>
       </Form>
       </Col>
-      <Col className="containerContact1" xs={12} md={6} lg={4}>
+      <Col className="containerContact1" xs={12} md={6} lg={6}>
        <hr className="line"></hr>
-       <Container className="containeri" fluid>
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.686476567928!2d2.1202448759180306!3d41.38089597130049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f576297baf%3A0x44f65330fe1b04b9!2sSpotify%20Camp%20Nou!5e0!3m2!1sen!2s!4v1744664743759!5m2!1sen!2s" width="600" height="450" allowFullScreen="" loading="lazy"  className="harta"></iframe>
-      </Container>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.686476567928!2d2.1202448759180306!3d41.38089597130049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f576297baf%3A0x44f65330fe1b04b9!2sSpotify%20Camp%20Nou!5e0!3m2!1sen!2s!4v1744664743759!5m2!1sen!2s" width="400px" height="450" allowFullScreen="" loading="lazy"  className="harta"></iframe>
+      
        </Col>
+       </Row>
        
        {showMessage && (
         <div className="containerSms">
@@ -84,7 +91,6 @@ const Contact = () => {
         </div>
       )}
       
-    </Row>
     </Container>
   );
 };

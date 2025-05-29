@@ -1,0 +1,99 @@
+
+.container{
+  margin-top: 100px;
+}
+.container .paragraph{
+    font-size: 20px;
+    margin-top: -20px;
+    color: #333;
+    font-weight: 100;
+    
+}
+.imazhi {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    border: 2px solid grey;
+    
+  }
+  
+  .imazhi img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    
+  }
+.best-years-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .header{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: start;
+    background: linear-gradient(90deg, #c9202c 0%, #c9202c 50%, #1e3a8a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    max-width: 1000px;
+}
+
+.best-years-content h2 {
+    color: #004d98;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.best-years-content p {
+    color: #333;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+}
+  .trophy-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .trophy-list li {
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #a50044;
+    font-weight: 500;
+  }
+  
+  .trophy-list li:hover {
+    background-color: #e9ecef;
+    border-left-color: #004d98;
+  }
+  
+  @media (max-width: 768px) {
+    .best-years-content h1 {
+      font-size: 2rem;
+    }
+    
+    .best-years-content {
+      padding: 0 15px;
+    }
+  }
+  .logo{
+    width: 70px;
+    height: 70px;
+    background-color:transparent ;
+}
+
+.paragraph{
+    font-size:20px;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 400;
+}

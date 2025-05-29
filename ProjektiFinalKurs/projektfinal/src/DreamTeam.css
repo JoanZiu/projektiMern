@@ -1,0 +1,26 @@
+.barca-container {
+    padding: 1.5rem;
+    max-width: 64rem;
+    margin: 0 auto;
+    color: #1f2937; /* gray-800 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+  }
+  
+  .barca-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .barca-container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .barca-container p {
+    margin-bottom: 1rem;
+  }
+  

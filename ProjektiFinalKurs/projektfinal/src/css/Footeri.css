@@ -110,3 +110,10 @@
 margin-top: 5px;
   
 }
+.footer-link{
+    text-decoration: none;
+    color: inherit;
+}
+.footer-link:hover{
+    text-decoration: underline;
+}

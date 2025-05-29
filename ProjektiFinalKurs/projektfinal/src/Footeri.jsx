@@ -68,10 +68,10 @@ const Footeri = () => {
             </Col>
             <Col>
             <p className='headeri'>History</p>
-            <p className='emrat'>2008-16 The best years in our history</p>
-            <p className='emrat'>The era of the dream team</p>
-            <p className='emrat'>1899-1909.Foundation and survival</p>
-            <p className='emrat'>Barca in the Champions League</p>
+            <p className='emrat'> <a href='/best-years' className='footer-link'>2008-16 The best years in our history</a></p>
+            <p className='emrat'><a href='/dream-team' className='footer-link'>The era of the dream team</a></p>
+            <p className='emrat'><a href='/foundation' className='footer-link'>1899-1909.Foundation and survival</a></p>
+            <p className='emrat' ><a href='/champs' className='footer-link'>Barca in the Champions League</a></p>
             </Col>
           </Row>
         </Container>

@@ -1,0 +1,93 @@
+.Lajmet {
+    width: 100%;
+    margin-top: 130px;
+    background-color: #ffffff;
+}
+
+.Rreshti {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.karta {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.karta:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.karta .card-img-top {
+    width: 100%;
+    display: block;
+}
+
+.karta .card-body {
+    position: relative;
+    padding: 15px;
+    background-color: white;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.karta:hover .card-body {
+    transform: translateY(-50px);
+}
+
+.titulli {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.Permbajtja {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.karta:hover .Permbajtja {
+    opacity: 1;
+    max-height: 200px;
+}
+
+
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.karta {
+    height: 300px;
+    margin-bottom: 20px;
+}
+.karta:hover .card-img-top {
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+.Koka{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+}
+
+.foto{
+    object-fit: cover;
+    object-position: center top;
+}
